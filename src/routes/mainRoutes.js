@@ -34,4 +34,8 @@ router.get('/create', (req, res) => {
     });
 });
 
+//Invoke the methods for the CRUD of books
+const bookController = require('../controllers/bookController');
+router.post('/save', bookController.save )
+
 module.exports = router;

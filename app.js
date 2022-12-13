@@ -8,6 +8,8 @@ const PORT = 3000;
 /* Archivos Estáticos */
 app.use(express.static('public'));
 
+app.use(express.urlencoded({extended:false}));
+
 /* View Engine */
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/src/views');
