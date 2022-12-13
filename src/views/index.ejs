@@ -9,23 +9,25 @@
   <%- include('./partials/header') %>
     <main class="main">
       <h1>Lista de libros que has leido</h1>
+      <a href="/create" class="btn-create">Añadir Libro</a>
+      
       <section class="cards">
+        <% results.forEach((book)=>{ %>
           <article class="card">
-            <img src="https://www.stephenking.com.ar/wp-content/uploads/2017/02/The-Stand-Doubleday.jpg" alt="">
-            <h5>
-              The Stand (Apocalipsis)
+            <img src="<%= book.cover %>" alt="">
+            <h5 class="title">
+              <%= book.title %>
             </h5>
             <p class="author">
-              Stephen King
+              <%= book.author %>
             </p>
-            <p>
-              1978
+            <p class="year">
+              <%= book.year %>
             </p>
           </article>
-
+          <% }) %>
       </section>
-      <%- include('./partials/footer') %>
     </main>
+    <%- include('./partials/footer') %>
 </body>
-
 </html>
