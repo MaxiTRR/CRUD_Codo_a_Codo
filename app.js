@@ -5,6 +5,8 @@ const mainRoutes = require('./src/routes/mainRoutes');
 const adminRoutes = require('./src/routes/adminRoutes');
 const PORT = 3000;
 
+
+
 /* Archivos Estáticos */
 app.use(express.static('public'));
 

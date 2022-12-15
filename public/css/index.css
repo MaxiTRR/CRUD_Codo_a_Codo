@@ -90,6 +90,15 @@ section {
     margin-bottom:10px; 
 }
 
+.icons{
+    display: flex;
+    gap: 30px;
+}
+
+.icons a i{
+    color: black;
+}
+
 /*Create*/
 
 
