@@ -46,3 +46,15 @@ exports.update = (req, res)=>{
         };
     });
 };
+
+//Method to delete the books
+
+// exports.delete = (req, res)=>{
+//     connection.query('DELETE FROM books WHERE id=?',[id],(error, results)=>{
+//         if(error){
+//             console.error(error);
+//         }else{
+//             res.redirect('/');
+//             };
+//         });
+//     };

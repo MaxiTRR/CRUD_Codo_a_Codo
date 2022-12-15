@@ -49,10 +49,22 @@ router.get('/edit/:id',(req, res)=>{
     });
 });
 
+router.get('/delete/:id',(req, res)=>{
+    const id = req.params.id;
+    connection.query('DELETE FROM books WHERE id=?',[id],(error, results)=>{
+        if(error){
+            throw error;
+        }else{
+            res.redirect('/');
+        };
+    });
+});
+
 
 //Invoke the methods for the CRUD of books
 const bookController = require('../controllers/bookController');
 router.post('/save', bookController.save )
 router.post('/update', bookController.update);
+
 
 module.exports = router;
