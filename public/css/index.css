@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;700;900&display=swap');
 
 
 *{
@@ -70,35 +70,64 @@ section {
 
 .card {
     display: flex;
+    max-width: 250px !important;
+    min-height: 435px !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: snow;
     color: #2b2b2b;
-    padding: 10px;
-    border-radius: 12px;
+    padding: 5px;
+    border-width: 5px !important;
+    border-color: #201e1e !important;
+    box-shadow:2px 2px 5px 5px #201e1e;
+    border-radius: 20px !important;
 }
 
-.card .title{
-    font-size: 20px;
-    margin-top:10px;
-    margin-bottom:10px;
+.stats{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.card .author{
-    font-weight: 800;
-    font-size: 20px;
-    margin-top:10px;
-    margin-bottom:10px;
+.card .card-number{
+    align-self: flex-end !important;
+    font-weight: 900;
+    display: block;
+    background-color: #958f8f;
+    border-radius: 10px;
+    padding: 2px;
+    color: #fff;
+    margin: 2px;
 }
 
-.card .year{
-    margin-top:10px;
-    margin-bottom:10px; 
+.card-body{
+    width: 100% !important;
+}
+
+.card-title{
+    font-weight: 700 !important;
+    border-top-style:solid;
+    padding-top: 16px !important;
+}
+
+.author{
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.year{
+    display: block;
+    border-top-style: double;
+    margin-top: 30px !important;
+    padding-top: 15px;
 }
 
 .icons{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
