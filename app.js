@@ -8,7 +8,7 @@ const PORT = 3000;
 
 
 /* Archivos Estáticos */
-app.use(express.static('public'));
+app.use(express.static('./public'));
 
 app.use(express.urlencoded({extended:false}));
 
