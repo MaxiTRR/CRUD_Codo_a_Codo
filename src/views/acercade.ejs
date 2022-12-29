@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <%- include('./partials/head') %> 
+    <%- include('./partials/head') %>
 </head>
+
 <body>
-    <%- include('./partials/header') %> 
-    <h1>Hola desde Nosotros EJS</h1>
-    
-    <%- include('./partials/footer') %> 
+    <%- include('./partials/header') %>
+        <main class="main-about">
+            <div class="container mt-5">
+                <h1 class="text-center pt-5">Acerca del proyecto</h1>
+
+                <p class="about-text py-5 px-5">
+                    Este proyecto surgio dentro del marco del curso <b>Codo a Codo 4.0</b>, de la <b>Academia de Aprendizaje a lo largo de la Vida</b>del gobierno de la Ciudad de Bs. As.
+                    <br><br>
+                    El mismo consistia en la realizacion de una app de <b>CRUD (Create, Read, Update, Delete)</b> a modo de
+                    proyecto de trabajo final integrador que pusierera a prueba lo aprendido durante la cursada
+                    en la comision 22578, a cargo de la intructora <a href="https://www.linkedin.com/in/talia-rodrigues-20/">Talia Rodriguez.</a>. El proyecto se realizo en <b>NodeJs</b>, con la utilizacion de diversas librerias como <b>Express</b> y <b>MySql</b> para la configuracion del Backend y la Base da Datos, asi como tambien <b>EJS</b> como template engine para poder tener paginas dinamicas y la utilizacion del framework de CSS <b>Bootstrap 5</b> para los estilos del FrontEnd.
+                    <br><br> 
+                    El tema del proyecto era de
+                    realizacion libre, lo importante era poder
+                    implementar todo el codigo necesario para poder tener un CRUD funcional. Yo decidi escapar un poco
+                    de las tipicas tablas de manejo de datos
+                    y decidi crear una app que tuviera un aspecto un poco mas interesante, y con la idea de que
+                    seguramente todos, o por lo menos una vez en la vida,
+                    han realizado alguna coleccion de algo, implemte un sistema que le permitiera a uno llevar una
+                    <b>coleccion de todos los libros que ha leido en una especie de formato de cartas coleccionables</b> que brindara los datos mas relevantes de los libros en cuestion.
+                    <br><br>
+                    La tematica viene
+                    en parte por mi ropio amor a la lectura y con la idea de poder realizar algo que pueda aportar un
+                    valor cultural y motive a la gente a leer mas,
+                    ademas de que creo se le da al rpoeycto un aspecto ludico que puede resultar atractivo para mucho
+                    gente. Mas alla de la tematica y/o su utilidad,
+                    lo impportante del proyecto ea poder implementar el sistema CRUD completo (segurmante se podria
+                    obtener mejores resultados con la utilizacion
+                    de una API que rreemplazara a la Bas de Datos creada especificamente con la info de los libros), y
+                    ademas, todo el <b>codigo es reutilizable para otro tipo de tematicas y/o necesidades</b>, como un sistema de manejo de productos o datos para una empresa y/o organizacion.
+                    <br><br>
+                    Como ideas a futuro, me gustaria poder lograr que la app permita loguearse con una cuenta, y que
+                    cada uno tenga la libertad de poder crear
+                    sus propias colecciones personalizadas (libors, peliculas, series, discos o de lo que a uno se le
+                    ocurra), o incluso poder implemntar la utilizacion
+                    de API's para lograr una experiencia mas completa sin la necesidad de cargar los datos manualmente.
+                </p>
+            </div>
+        </main>
+        <%- include('./partials/footer') %>
 </body>
+
 </html>

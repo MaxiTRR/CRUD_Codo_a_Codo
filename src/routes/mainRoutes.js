@@ -34,6 +34,12 @@ router.get('/create', (req, res) => {
     });
 });
 
+router.get('/contact', (req, res) => {
+    res.render('contact', {
+        title: 'Contacto | CRUD MVC'
+    });
+});
+
 
 router.get('/edit/:id',(req, res)=>{
     const id = req.params.id;

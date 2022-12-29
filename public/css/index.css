@@ -135,13 +135,63 @@ section {
     color: black;
 }
 
-/*Create*/
+/*Acerca de*/
 
+.main-about .container{
+    color: #201e1e;
+    background-color: white;
+    border-width: 5px !important;
+    border-color: #201e1e !important;
+    box-shadow:2px 2px 25px 25px #201e1e;
+    border-radius: 20px !important;
+}
 
+.about-text{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Contact*/
+
+.profile{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img{
+    width: 400px;
+    height: 400px;
+}
+
+.profile-text{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mail{
+    display: inline-flex;
+    gap: 20px;
+}
+
+.profile-icons{
+    display: flex;
+    gap: 50px;
+    font-size: 40px;
+    color: white;
+    padding: 0 !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icons a{
+    text-decoration: none;
+    color: white;
+}
 
 footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    margin-top: 50px;
 }
